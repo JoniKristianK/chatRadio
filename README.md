@@ -3,20 +3,23 @@ chatRadio
 
 #### Radio WebApp With Channel Specific Chat
 
-Register an account, listen to music and chat with other registered
-listeners eg. about the song currently playing.
+Register an account, listen to music and chat with other registered listeners eg. about the song currently playing.
 
 Log in:
 -------
 
--   Nick (required)
--   Picture (optional)
--   A description of yourself, such as your favorite band (optional)
+### Make an avatar
 
--   Search by genre
--   choose a channel based on the search results
--   Add channels to your favorites list
+* Nick (required)
+* Picture (optional)
+* A description of yourself, such as your favorite band (optional)
 
--   One chat group per station
+### Radio
 
+* Search by genre
+* choose a channel based on the search results
+* Add channels to your favorites list
 
+### Chat
+
+* One chat group per station
