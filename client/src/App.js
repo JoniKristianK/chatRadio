@@ -1,3 +1,7 @@
+import React from 'react';
+
+import StationList from './components/StationList';
+
 import './App.css';
 
 function App() {
@@ -5,6 +9,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1>chatRadio</h1>
+        <StationList />
       </header>
     </div>
   );
