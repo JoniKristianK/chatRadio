@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StationList from './components/StationList';
+import Player from './components/Player';
 
 import './App.css';
 
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <h1>chatRadio</h1>
-        <StationList />
+        <Player />
       </header>
     </div>
   );
