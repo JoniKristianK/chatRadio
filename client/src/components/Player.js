@@ -3,6 +3,9 @@ import Iframe from 'react-iframe';
 
 import SelectGenre from './SelectGenre';
 
+// genre's initial value
+import { localStations } from '../dbStations';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -30,9 +33,9 @@ const useStyles = makeStyles({
 const Player = () => {
   const classes = useStyles();
   const [station, setStation] = useState('s117163');
-  const [genre, setGenre] = useState([]);
+  const [genre, setGenre] = useState(localStations);
 
-  // this genre comes from <SelectGenre handleGenreList event.target.value
+  // this genre comes from <SelectGenre handleGenreList=event.target.value
   const handleGenreList = (genre) => {
     setGenre(genre);
   };

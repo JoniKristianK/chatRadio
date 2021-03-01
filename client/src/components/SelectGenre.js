@@ -18,10 +18,6 @@ const SelectGenre = ({ handleGenreList }) => {
   const classes = useStyles();
   const [genre, setGenre] = useState('');
 
-  //   useEffect(() => {
-  //     handleGenreList(localStations);
-  //   }, [handleGenreList]);
-
   const handleChange = (event) => {
     setGenre(event.target.value);
     handleGenreList(event.target.value);
