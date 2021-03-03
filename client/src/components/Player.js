@@ -10,15 +10,15 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {},
-  stationListImg: {
+  stationLogo: {
     padding: '5px',
-    border: 'solid black 2px',
-    margin: '5px',
+    border: 'solid cyan 2px',
+    margin: '8px 5px',
     borderRadius: '10px',
     height: '70px',
     width: '70px',
   },
-  stationLogos: {
+  stationList: {
     width: '400px',
     margin: '0 auto',
   },
@@ -32,6 +32,7 @@ const useStyles = makeStyles({
 
 const Player = () => {
   const classes = useStyles();
+
   const [station, setStation] = useState('s117163');
   const [genre, setGenre] = useState(localStations);
 
@@ -40,9 +41,9 @@ const Player = () => {
     setGenre(genre);
   };
 
-  let stationLogos = genre.map((station) => (
+  let stationList = genre.map((station) => (
     <img
-      className={classes.stationListImg}
+      className={classes.stationLogo}
       key={station.id}
       src={station.src}
       alt={station.alt}
@@ -55,7 +56,7 @@ const Player = () => {
   return (
     <div>
       <SelectGenre handleGenreList={handleGenreList} />
-      <div className={classes.stationLogos}>{stationLogos}</div>
+      <div className={classes.stationList}>{stationList}</div>
       <div>
         <Iframe
           className={classes.player}
