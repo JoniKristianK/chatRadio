@@ -1,7 +1,9 @@
 html,
 body {
   margin: 0;
-  background-color: #000;
+  /* background-color: #000; */
+  background: url(./assests/backGround/blackclouds.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 h1 {
@@ -17,7 +19,7 @@ h1 {
 
 .App-header {
   /*#6afdff alternative background-color*/
-  background-color: #000;
+  /* background-color: #000; */
   min-height: 86vh;
   height: 100%;
   display: flex;

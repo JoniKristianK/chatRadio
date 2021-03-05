@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   stationLogo: {
     padding: '5px',
     border: 'solid cyan 2px',
-    margin: '8px 5px',
+    margin: '10px 8px',
     borderRadius: '10px',
     height: '70px',
     width: '70px',

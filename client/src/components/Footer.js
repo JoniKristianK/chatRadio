@@ -42,8 +42,8 @@ const Footer = () => {
             <MenuIcon />
           </IconButton>
           */}
-          <Typography variant='h6' className={classes.title}>
-            ChatRadio
+          <Typography variant='h7' className={classes.title}>
+            &copy;{`hatRadio ${new Date().getFullYear()}`}
           </Typography>
         </Toolbar>
       </AppBar>
