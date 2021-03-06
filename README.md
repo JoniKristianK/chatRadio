@@ -23,3 +23,11 @@ Log in:
 ### Chat
 
 * One chat group per station
+
+Use:
+-------
+
+- git clone https://github.com/JoniKristianK/chatRadio.git
+- cd client
+- npm install
+- npm start
