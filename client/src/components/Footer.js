@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
   appBar: {
     position: 'static',
-    background: 'linear-gradient(45deg,  cyan 30%, black 70%)',
+    background: 'linear-gradient(15deg, black 30%, cyan 70%)',
     // margin: '0 auto',
     // width: '1000px',
   },

@@ -30,6 +30,7 @@ const SelectGenre = ({ handleGenreList }) => {
     <div>
       <FormControl className={classes.formControl}>
         {/* <InputLabel id='label'>Select Genre</InputLabel> */}
+
         <Select
           style={{ backgroundColor: 'black', color: 'cyan', padding: '7px' }}
           // labelId='label'

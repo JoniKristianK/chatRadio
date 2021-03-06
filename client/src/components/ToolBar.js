@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   appBar: {
     position: 'static',
     // #355c96 blueIsh toolbar
-    background: 'linear-gradient(45deg, black 30%, cyan 70%)',
+    background: 'linear-gradient(165deg, black 30%, cyan 70%)',
     // margin: '0 auto',
     // width: '1000px',
   },
