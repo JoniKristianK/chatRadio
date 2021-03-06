@@ -17,7 +17,7 @@ function App() {
             backgroundColor: '#08101d',
             padding: '45px 10px 10px 10px',
             borderRadius: '10px',
-            border: 'solid cyan 3px',
+            border: 'solid cyan 5px',
           }}
         >
           <Player />
