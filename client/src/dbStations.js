@@ -29,12 +29,12 @@ import houseTime from './assests/houseTime.webp';
 export const localStations = [
   { src: radioCity, alt: 'Radio City', id: 's14868' },
   { src: radioRock, alt: 'Radio Rock', id: 's117163' },
-  { src: iskelma, alt: 'Iskelmä', id: 's75241' },
+  { src: iskelma, alt: 'Radio Iskelmä', id: 's75241' },
   { src: radioSun, alt: 'Radio Sun', id: 's117164' },
-  { src: suomiPop, alt: 'Suomi Pop', id: 's117170' },
+  { src: suomiPop, alt: 'Radio SuomiPop', id: 's117170' },
   { src: fun, alt: 'Fun', id: 's221774' },
   { src: radioAalto, alt: 'Radio Aalto', id: 's117160' },
-  { src: nrj, alt: 'NRJ', id: 's117128' },
+  { src: nrj, alt: 'Radio NRJ Finland', id: 's117128' },
   //   { src: groove, alt: 'Groove', id: 's65085' },
   //   { src: nova, alt: 'Nova', id: 's117097' },
 ];
