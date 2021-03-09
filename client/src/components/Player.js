@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     borderRadius: '10px',
     height: '70px',
     width: '70px',
+    backgroundColor: 'white',
   },
   stationList: {
     width: '400px',
