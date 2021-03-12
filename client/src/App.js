@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -28,11 +28,11 @@ const useStyles = makeStyles({
 const App = (props) => {
   const classes = useStyles();
 
-  const [station, setStation] = useState('s117163');
+  const [station, setStation] = useState('s117163'); // 's117163
   const [stationName, setStationName] = useState('');
-  const [genre, setGenre] = useState(localStations);
+  const [genre, setGenre] = useState(localStations); //localStations
 
-  // this genre comes from <SelectGenre handleGenreList=event.target.value
+  //this genre comes from <SelectGenre handleGenreList=event.target.value
   const handleGenreList = (genre) => {
     setGenre(genre);
   };
