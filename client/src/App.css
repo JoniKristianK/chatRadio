@@ -29,3 +29,10 @@ h1 {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.App-container {
+  background-color: #08101d;
+  padding: 45px 10px 10px 10px;
+  border-radius: 10px;
+  border: solid cyan 5px;
+}

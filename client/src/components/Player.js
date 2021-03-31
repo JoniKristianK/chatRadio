@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   player: {
     border: 'solid black 3px',
     borderRadius: '13px',
-    width: '500px',
+    width: '450px',
     height: '95px',
   },
 });
