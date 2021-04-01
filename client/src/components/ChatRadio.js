@@ -13,6 +13,11 @@ const useStyles = makeStyles({
     width: '450px',
     height: '95px',
   },
+  message: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
 });
 
 const ChatRadio = (props) => {
@@ -55,15 +60,17 @@ const ChatRadio = (props) => {
           ))}
         </ol>
       </div>
-      <textarea
-        value={newMessage}
-        onChange={handleNewMessageChange}
-        placeholder='Write message...'
-        className='new-message-input-field'
-      />
-      <button onClick={handleSendMessage} className='send-message-button'>
-        Send
-      </button>
+      <div className={classes.message}>
+        <textarea
+          value={newMessage}
+          onChange={handleNewMessageChange}
+          placeholder='Write message...'
+          className='new-message-input-field'
+        />
+        <button onClick={handleSendMessage} className='send-message-button'>
+          Send
+        </button>
+      </div>
     </div>
   );
 };
