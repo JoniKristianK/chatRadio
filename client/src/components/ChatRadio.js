@@ -1,9 +1,23 @@
 import React from 'react';
 
 import './ChatRadio.css';
+import Iframe from 'react-iframe';
 import useChat from './useChat';
 
-const ChatRoom = (props) => {
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  player: {
+    border: 'solid black 3px',
+    borderRadius: '13px',
+    width: '450px',
+    height: '95px',
+  },
+});
+
+const ChatRadio = (props) => {
+  const classes = useStyles();
+
   const { roomId } = props.match.params; // Gets roomId from URL
   const { messages, sendMessage } = useChat(roomId); // Creates a websocket and manages messaging
   const [newMessage, setNewMessage] = React.useState(''); // Message to be sent
@@ -17,9 +31,16 @@ const ChatRoom = (props) => {
     setNewMessage('');
   };
 
+  const stationURL = `https://tunein.com/embed/player/${roomId.slice(1)}/`;
+
   return (
     <div className='chat-room-container'>
-      {/* <h1 className='room-name'>Room: {roomId}</h1> */}
+      <Iframe
+        className={classes.player}
+        url={stationURL}
+        // display='initial'
+        // position='relative'
+      />
       <div className='messages-container'>
         <ol className='messages-list'>
           {messages.map((message, i) => (
@@ -47,4 +68,4 @@ const ChatRoom = (props) => {
   );
 };
 
-export default ChatRoom;
+export default ChatRadio;
