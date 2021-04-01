@@ -2,12 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import ToolBar from './components/ToolBar';
-import Player from './components/Player';
+import Main from './components/Main';
 import ChatRadio from './components/ChatRadio';
 import Footer from './components/Footer';
 
 import './App.css';
-// import 'index.css';
 
 function App() {
   return (
@@ -18,8 +17,8 @@ function App() {
         <div className='App-container'>
           <Router>
             <Switch>
-              <Route exact path='/' component={Player} />
-              <Route exact path='/:roomId' component={ChatRadio} />
+              <Route exact path='/' component={Main} />
+              <Route path='/:roomId' component={ChatRadio} />
             </Switch>
           </Router>
         </div>

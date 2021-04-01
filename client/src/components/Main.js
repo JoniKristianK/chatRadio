@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Iframe from 'react-iframe';
+import { withRouter } from 'react-router-dom';
 
 import SelectGenre from './SelectGenre';
 
@@ -22,18 +22,11 @@ const useStyles = makeStyles({
     width: '400px',
     margin: '0 auto',
   },
-  player: {
-    border: 'solid black 3px',
-    borderRadius: '13px',
-    width: '450px',
-    height: '95px',
-  },
 });
 
-const Player = () => {
+const Main = (props) => {
   const classes = useStyles();
 
-  const [station, setStation] = useState('s117163');
   const [genre, setGenre] = useState(localStations);
 
   // this genre comes from <SelectGenre handleGenreList=event.target.value
@@ -47,26 +40,16 @@ const Player = () => {
       key={station.id}
       src={station.src}
       alt={station.alt}
-      onClick={() => setStation(station.id)}
+      onClick={() => props.history.push(`/:${station.id}`)}
     />
   ));
-
-  const stationURL = `https://tunein.com/embed/player/${station}/`;
 
   return (
     <div>
       <SelectGenre handleGenreList={handleGenreList} />
       <div className={classes.stationList}>{stationList}</div>
-      <div>
-        <Iframe
-          className={classes.player}
-          url={stationURL}
-          // display='initial'
-          // position='relative'
-        />
-      </div>
     </div>
   );
 };
 
-export default Player;
+export default withRouter(Main);

@@ -32,9 +32,9 @@ h1 {
 
 .App-container {
   background-color: #08101d;
-  padding: 45px 10px 10px 10px;
+  /* padding: 45px 10px 10px 10px; */
   border-radius: 10px;
   border: solid cyan 5px;
   max-width: 500px;
-  max-height: 450px;
+  max-height: 600px;
 }

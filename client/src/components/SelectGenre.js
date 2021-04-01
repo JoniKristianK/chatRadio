@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     minWidth: '370px',
     border: 'solid cyan 2px',
     borderRadius: '10px',
+    marginTop: '30px',
   },
 });
 
@@ -29,17 +30,12 @@ const SelectGenre = ({ handleGenreList }) => {
   return (
     <div>
       <FormControl className={classes.formControl}>
-        {/* <InputLabel id='label'>Select Genre</InputLabel> */}
-
         <Select
           style={{ backgroundColor: 'black', color: 'cyan', padding: '7px' }}
-          // labelId='label'
           id='select'
           value={genre}
           onChange={handleChange}
         >
-          {/* <em>Select</em> */}
-
           <MenuItem
             style={{ backgroundColor: 'black', color: 'cyan' }}
             value={localStations}
