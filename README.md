@@ -5,6 +5,8 @@ chatRadio
 
 Register an account, listen to music and chat with other registered listeners eg. about the song currently playing.
 
+*in progress*
+
 Log in:
 -------
 
